@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #58a097;
+  font-family: "Lato", sans-serif;
+}
+
+/* Caculator */
+
+.caculator {
+  width: 35rem;
+  padding: 1.1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: -0.2rem -0.2rem 3rem rgba(91, 91, 91, 0.112),
+    0.2rem 0.2rem 3rem rgba(91, 91, 91, 0.112);
+}
+
+/* Caculator - Text Field */
+
+.caculator .textField {
+  width: 100%;
+  height: 12rem;
+  font-size: 3rem;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(120deg, #f0f0f0 0%, #e2dee8 100%);
+  color: #262626;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+/* Caculator - Keys*/
+
+.caculator .keys {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0.5rem;
+}
+
+/* Keys - Button */
+
+.caculator input[type="button"] {
+  padding: 2rem 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Play", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Button - Del  */
+
+.caculator .keys .clear {
+  grid-column: 1 / 3;
+  background-image: linear-gradient(120deg, #ededed 0%, #c5cacf 100%);
+  color: #3c3b3b;
+  border-radius: 0.3rem 0 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Button - Arrow  */
+
+.caculator .keys .arrow {
+  background-image: linear-gradient(120deg, #ededed 0%, #c5cacf 100%);
+  color: #3c3b3b;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Button - /;  *;  +;  -;  */
+
+.caculator .keys .slash,
+.caculator .keys .multiply,
+.caculator .keys .sub,
+.caculator .keys .add {
+  color: #3c3b3b;
+  background-image: linear-gradient(120deg, #d9eced 0%, #b6cfd0 100%);
+  font-size: 2.2rem;
+  transition: all 1s ease;
+}
+
+.caculator .keys .slash {
+  border-radius: 0 0.3rem 0 0;
+}
+
+/* Button - 1; 2; 3; 4; 5; 6; 7; 8; 9; 0; ,; */
+
+.caculator .keys .one,
+.caculator .keys .two,
+.caculator .keys .three,
+.caculator .keys .four,
+.caculator .keys .five,
+.caculator .keys .six,
+.caculator .keys .seven,
+.caculator .keys .eight,
+.caculator .keys .nine,
+.caculator .keys .zero,
+.caculator .keys .dot {
+  color: #49897f;
+  background-image: linear-gradient(120deg, #f0f0f0 0%, #e2dee8 100%);
+  font-size: 2.2rem;
+}
+
+.caculator .keys .zero {
+  border-radius: 0 0 0 0.3rem;
+}
+
+/* Button - = */
+
+.caculator .keys .equal {
+  color: #fff;
+  background-image: linear-gradient(120deg, #b4c7c4 0%, #51a597 100%);
+  border-radius: 0 0 0.3rem 0;
+  grid-column: 3 / 5;
+  font-size: 2.2rem;
+}
