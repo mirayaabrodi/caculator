@@ -1,4 +1,4 @@
-# caculator  :heavy_division_sign:
+# Caculator  :heavy_division_sign:
 
 A website that has a calculator, for someone who needs to use it.:tada:
 
